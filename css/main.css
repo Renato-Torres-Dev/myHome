@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+}
+
+@keyframes fadeOut {
+    to{
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 320px){
+    .rt-page-wrapper, .rt-preloader{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background-color: #1c1c1c;
+        border: 30px solid #000;
+    }
+
+    .rt-preloader{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .rt-topbar{
+        width: 100%;
+        height: 110px;
+        display: block;
+        background-color: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .rt-logo{
+        width: 74px;
+        height: 110px;
+        float: left;
+        margin-left: 60px;
+        background-color: #2CCB69;
+        border-radius: 0 0 37px 0;
+    }
+
+    .rt-logo img{
+        width: 90px;
+        height: 70px;
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+
+    .rt-menu{
+        display: none;
+    }
+
+    .rt-btn-contact{
+        width: 45px;
+        height: 45px;
+        display: block;
+        background-color: #2CCB69;
+        position: fixed;
+        border-radius: 50%;
+        border: none;
+        bottom: 45px;
+        right: 45px;
+        z-index: 200;
+        background-image: url("../images/icon-contact-close.svg");
+        background-repeat: no-repeat;
+        transition: all 0.2s ease-out;
+        cursor: pointer;
+    }
+
+    .rt-contact-info{
+        width: 245px;
+        height: 165px;
+        padding: 25px;
+        position: fixed;
+        bottom: 115px;
+        right: 65px;
+        z-index: 200;
+        display: none;
+    }
+
+    .rt-contact-info-inner{
+        display: table;
+        width: 100%;
+        float: left;
+    }
+
+    .rt-contact-info-inner > p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .rt-social-links{
+        width: 100%;
+        height: 45px;
+        display: block;
+        position: relative;
+        left: -12px;
+        margin-top: 7px;
+    }
+
+    .rt-social{
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+    }
+
+    .rt-social > img{
+        width: 20px;
+        height: auto;
+        display: block;
+        margin: 12px auto 0;
+    }
+
+    .rt-corner{
+        width: 25px;
+        height: 25px;
+        display: block;
+        float: right;
+        display: relative;
+    }
+
+    .rt-corner:after{
+        content: "";
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        right: -1px;
+        background: transparent url(../images/corner.svg) no-repeat;
+    }
+}
+
+@media screen and (min-width: 576px){
+    
+}
+
+@media screen and (min-width: 768px){
+    
+}
+
+@media screen and (min-width: 992px){
+    .rt-menu{
+        display: table;
+        float: left;
+        height: 110px;
+        margin-left: 30px;
+    }
+
+    .rt-menu a{
+        font-family: "Open Sans";
+        font-size: 16px;
+        color: #bcbcbc;
+        text-transform: lowercase;
+        text-decoration: none;
+        display: inline-block;
+        margin: 55px 20px 0 20px;
+        font-weight: 400;
+        position: relative;
+    }
+
+    .rt-menu a:first-child{
+        margin-left: 0;
+    }
+
+    .rt-menu a:hover{
+        color: #2CCB69;
+    }
+
+    .rt-menu a:before{
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #2CCB69;
+        display: block;
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        transition: all 0.2s ease-out;
+        transform: scale(0, 1);
+    }
+
+    .rt-menu a:hover:before{
+        transform: scale(1, 1);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    
+}
+
+@media screen and (min-width: 1364px){
+    
+}
+
+@media screen and (min-width: 1600px){
+    
+}
+
+/*CLASSES UTILITÁRIAS*/
+
+.rt-title{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+}
+
+.rt-text-green{
+    color: #2CCB69;
+}
+
+.rt-text-dark{
+    color: #4d4c4c;
+}
+
+.rt-text-light{
+    color: #bcbcbc;
+}
+
+.rt-text-black{
+    color: black;
+}
+
+.rt-bg-green{
+    background-color: #2CCB69;
+}
+
+.rt-bg-dark{
+    background-color: #4d4c4c;
+}
+
+.rt-bg-light{
+    background-color: #bcbcbc;
+}
+
+.rt-bg-black{
+    background-color: black;
+}
+
+.rt-mar-15{
+    margin: 15px;
+}
+
+.rt-mar-top-15{
+    margin-top: 15px;
+}
+
+.rt-mar-right-15{
+    margin-right: 15px;
+}
+
+.rt-mar-bottom-15{
+    margin-bottom: 15px;
+}
+
+.rt-mar-left-15{
+    margin-left: 15px;
+}
+
+.rt-pad-15{
+    padding: 15px;
+}
+
+.rt-pad-top-15{
+    padding-top: 15px;
+}
+
+.rt-pad-right-15{
+    padding-right: 15px;
+}
+
+.rt-pad-bottom-15{
+    padding-bottom: 15px;
+}
+
+.rt-pad-left-15{
+    padding-left: 15px;
+}
+/*CLASSES COMPORTAMENTO*/
+
+.rt-is-open{
+    display: block;
+}
+
+.rt-change-icon{
+    background-position-y: -45px;
+}
+
+.rt-fade-out{
+    animation: fadeOut 2s forwards ease-out;
+}
