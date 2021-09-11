@@ -20,7 +20,7 @@ p{
     .rt-page-wrapper, .rt-preloader{
         width: 100%;
         height: 100vh;
-        display: block;
+        display: table;
         background-color: #1c1c1c;
         border: 30px solid #000;
     }
@@ -103,7 +103,7 @@ p{
 
     .rt-contact-info-inner > p{
         font-size: 16px;
-        line-height: 24px;
+        line-height: 10px;
     }
 
     .rt-social-links{
@@ -112,7 +112,7 @@ p{
         display: block;
         position: relative;
         left: -12px;
-        margin-top: 7px;
+        margin-top: 5px;
     }
 
     .rt-social{
@@ -145,6 +145,18 @@ p{
         bottom: -20px;
         right: -1px;
         background: transparent url(../images/corner.svg) no-repeat;
+    }
+
+    /*----HOME----*/
+
+    .rt-display-text{
+        margin-top: 12%;
+    }
+
+    #rt-home-presentation{
+        background-image: url(../images/FB_IMG_1616099513882.png);
+        background-repeat: no-repeat;
+        background-position: 65% bottom;
     }
 }
 
@@ -221,6 +233,10 @@ p{
     font-weight: 400;
 }
 
+.rt-title-big{
+    font-size: 120px;
+}
+
 .rt-text-green{
     color: #2CCB69;
 }
@@ -292,6 +308,16 @@ p{
 .rt-pad-left-15{
     padding-left: 15px;
 }
+
+.rt-full-heigth{
+    height: 100vh;
+}
+
+.rt-first-section{
+    height: calc(100vh - 30px);
+}
+
+
 /*CLASSES COMPORTAMENTO*/
 
 .rt-is-open{
