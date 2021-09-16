@@ -85,6 +85,51 @@ p{
         left: 0;
     }
 
+    .rt-overlay{
+        width: 100%;
+        height: 100vh;
+        display: block;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: rgba(44, 203, 105, 0.95);
+    }
+
+    .rt-modal{
+        width: 800px;
+        display: table;
+        padding: 30px;
+        border-radius: 0 30px 30px 30px;
+        position: fixed;
+        top: 15%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1200;
+    }
+
+    .rt-modal-header{
+        width: 100%;
+        display: table; 
+        position: relative;
+    }
+
+    .rt-close-modal{
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        color: #2CCB69;
+        text-align: center;
+        line-height: center;
+        cursor: pointer;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        border: none;
+        background-color: transparent;
+    }
+
     .rt-topbar{
         width: 100%;
         height: 110px;
@@ -93,6 +138,7 @@ p{
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 10;
     }
 
     .rt-logo{
@@ -113,6 +159,7 @@ p{
 
     .rt-menu{
         display: none;
+        z-index: 10;
     }
 
     .rt-btn-contact{
@@ -323,6 +370,53 @@ p{
 
 @media screen and (min-width: 1600px){
     
+}
+
+/*BOTÕES*/
+
+.rt-btn{
+    display: table;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s ease-out;
+    text-transform: lowercase;
+}
+
+.rt-btn-medium{
+    height: 38px;
+    padding: 0 27px;
+    border-radius: 19px;
+    font-size: 14px;
+}
+
+.rt-btn-large{
+    height: 45px;
+    padding: 0 35px;
+    border-radius: 23px;
+    font-size: 16px;
+}
+
+.rt-btn-green{
+    background-color: #2CCB69;
+    color: #1c1c1c;
+}
+
+.rt-btn-green:hover{
+    background-color: #075725;
+    color: #fff;
+    transform: scale(0.96);
+}
+
+.rt-btn-dark{
+    background-color: #151515;
+    color: #2CCB69;
+}
+
+.rt-btn-dark:hover{
+    background-color: #2f2f2f;
+    color: #fff;
 }
 
 /*CLASSES UTILITÁRIAS*/
