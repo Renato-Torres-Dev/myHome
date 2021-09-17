@@ -18,17 +18,51 @@
             <p class="rt-text-light rt-mar-top-15">Aguarde um pouquinho... Estamos carregando a página!</p>
         </div>
     </div>
-    <div class="rt-overlay"></div>
-    <div class="rt-modal rt-bg-black">
+    <div class="rt-overlay rt-toggle-modal"></div>
+    <div class="rt-modal rt-bg-black" id="rt-modal-orcamento">
         <div class="rt-modal-header">
             <h1 class="rt-title rt-text-green">Solicite um Orçamento!</h1>
-            <button class="rt-close-modal">X</button>
+            <button class="rt-close-modal rt-toggle-modal">X</button>
         </div>
         <div class="rt-modal-body">
-            <p class="rt-text-light">Por favor, informe os dados abaixo e eu entrarei em contato com você, o mais breve possível!</p>
-            <form action="" class="rt-form">
-                <input type="text" name="Nome" id="rt-nome" class="rt-field"/>
-            </form>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="rt-text-light">Por favor, informe os dados abaixo e eu entrarei em contato com você, o mais breve possível!</p>
+                </div>
+            </div>
+            <div class="row rt-mar-top-15">
+                <div class="col-sm-12">
+                    <form action="" class="rt-form">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 rt-mar-bottom-15">
+                                <label for="Nome" class="rt-text-light">Nome</label>
+                                <input type="text" name="Nome" id="rt-nome" class="rt-field"/>
+                            </div>
+                            <div class="col-sm-12 col-md-6 rt-mar-bottom-15">
+                                <label for="Email" class="rt-text-light">Email</label>
+                                <input type="email" name="Email" id="rt-email" class="rt-field"/>
+                            </div>
+                            <div class="col-sm-12 col-md-6 rt-mar-bottom-15">
+                                <label for="Telefone" class="rt-text-light">Telefone</label>
+                                <input type="tel" name="Telefone" id="rt-telefone" class="rt-field"/>
+                            </div>
+                            <div class="col-sm-12 col-md-6 rt-mar-bottom-15">
+                                <label for="Site" class="rt-text-light">Site</label>
+                                <input type="text" name="Site" id="rt-site" class="rt-field"/>
+                            </div>
+                            <div class="col-sm-12 col-md-12 rt-mar-top-15 rt-mar-bottom-15">
+                                <label for="Mensagem" class="rt-text-light">Descreva abaixo o projeto na qual você precisa de orçamento:</label>
+                                <textarea name="Mensagem" id="rt-mensagem" rows="8" class="rt-textarea"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-end rt-btn-enviar">
+                        <div class="col-sm-12 col-md-6 rt-mar-top-15">
+                            <button class="rt-btn rt-btn-large rt-btn-green rt-btn-block">Enviar</button>
+                    </div>
+                </form>
+            </div>
+            </div>
         </div>
     </div>
     <header class="rt-topbar">
@@ -72,7 +106,7 @@
                     <div class="col-sm-12 col-md-3 offset-md-2 rt-display-text">
                         <h1 class="rt-title rt-text-green rt-title-big">Olá!</h1>
                         <p class="rt-text-light">Meu nome é <span class="rt-text-green">Renato Torres</span>, sou designer de <span class="rt-text-green">UX e UI</span>, especializado em HTML, CSS e JavaScript. Trabalho em uma StartUp desenvolvendo projetos de FrontEnd. Este é um dos meus Portfólios para mostrar um pouco do meu trabalho.</p>
-                        <button class="rt-btn rt-btn-large rt-btn-green">Solicite um orçamento</button>
+                        <button class="rt-btn rt-btn-large rt-btn-green rt-toggle-modal">Solicite um orçamento</button>
                     </div>
                 </div>
             </div>

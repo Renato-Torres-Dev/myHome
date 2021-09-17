@@ -1,5 +1,7 @@
 //Declarando Variáveis
 let btnContact = document.querySelector(".rt-btn-contact");
+let toggleModal = document.querySelectorAll(".rt-toggle-modal");
+
 
 //Page Preloader
 window.addEventListener("load", function(){
@@ -16,4 +18,16 @@ btnContact.addEventListener("click", function(){
     let boxContact = document.querySelector (".rt-contact-info");
     boxContact.classList.toggle("rt-is-open");
     this.classList.toggle("rt-change-icon");
-})
+});
+
+//Abrindo e Fechando o Modal de Orçamento
+for(var i = 0; i < toggleModal.length; i++){
+    toggleModal[i].addEventListener("click", function(){
+        var overlay = document.querySelector(".rt-overlay");
+        var modalOrcamento = document.querySelector("#rt-modal-orcamento");
+        overlay.classList.toggle("rt-is-open");
+        modalOrcamento.classList.toggle("rt-is-open");
+        modalOrcamento.classList.toggle("rt-slide-top-in");
+    });
+}
+
