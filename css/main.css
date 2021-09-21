@@ -548,6 +548,10 @@ p, label{
     height: calc(100vh - 30px);
 }
 
+.rt-arrow-down{
+    padding: 0 !important;
+}
+
 
 /*CLASSES COMPORTAMENTO*/
 
