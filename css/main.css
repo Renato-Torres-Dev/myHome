@@ -400,7 +400,7 @@ p, label{
         justify-content: center;
         align-items: center;
         background-color: #2c2c2c;
-        border-radius: 0 23px 23px 0;
+        border-radius: 23px;
     }
 
     .rt-items-next-prev > div{
@@ -418,8 +418,29 @@ p, label{
     }
 
     ion-icon{
+        width: 45px;
         font-size: 32px;
         color: #2CCB69;
+        cursor: pointer;
+    }
+
+    .rt-slider-container{
+        width: 100%;
+        background-color: white;
+    }
+
+    .rt-slider-list{
+        width: auto;
+        height: 700px;
+        display: block;
+        background-color: deeppink;
+        list-style: none;
+    }
+
+    .rt-slider-item{
+        display: inline-block;
+        width: 500px;
+        height: 500px;
     }
 
 }
@@ -660,4 +681,30 @@ p, label{
 
 .rt-fade-out{
     animation: fadeOut 2s forwards ease-out;
+}
+
+.rt-no-radius-left{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.rt-no-radius-right{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.red1{
+    background: red;
+}
+
+.yellow1{
+    background:yellow;
+}
+
+.blue1{
+    background: blue;
+}
+
+.green1{
+    background: green;
 }
