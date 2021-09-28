@@ -52,7 +52,7 @@ var sliderListWidth = null;
 
 //Capturando larguras individuais
 
-var containerWidth = sliderContainer.parentElement.offsetWidth;
+var containerWidth = sliderContainer.parentElement().offsetWidth;
 
 //Passando larguras dinâmicas
 
