@@ -41,3 +41,23 @@ var waypoint = new Waypoint({
     offset: '80%'
 });
 
+//PORTFOLIO SLIDER
+
+//Declarando variáveis do slider
+
+var sliderContainer = document.querySelector('.rt-slider-container');
+var sliderList = document.querySelector('.rt-slider-list');
+var sliderItem = document.querySelectorAll('.rt-slider-item');
+var sliderListWidth = null;
+
+//Capturando larguras individuais
+
+var containerWidth = sliderContainer.parentElement.offsetWidth;
+
+//Passando larguras dinâmicas
+
+for(var p = 0; p < sliderItem.length; p++){
+    sliderItem[p].style.width = containerWidth+'px';
+}
+
+//Fazendo Animação do Slider onClick

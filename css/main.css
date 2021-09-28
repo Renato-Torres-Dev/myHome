@@ -425,8 +425,9 @@ p, label{
     }
 
     .rt-slider-container{
-        width: 100%;
         background-color: white;
+        display: block;
+        overflow: hidden;
     }
 
     .rt-slider-list{
