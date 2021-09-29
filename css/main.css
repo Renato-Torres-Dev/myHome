@@ -341,7 +341,7 @@ p, label{
         height: 400px;
         display: table;
         position: absolute;
-        left: 0px;
+        left: 15px;
         top: 26vh;
     }
 
@@ -405,12 +405,12 @@ p, label{
 
     .rt-items-next-prev > div{
         height: 32px;
-        line-height: 32px;
     }
 
     .rt-items-counter{
         font-family: "Open Sans", sans-serif;
         color: #4d4c4c;
+        line-height: 32px;
     }
 
     .rt-items-counter span:nth-child(1){
@@ -439,9 +439,9 @@ p, label{
     }
 
     .rt-slider-item{
-        display: inline-block;
-        width: 500px;
+        display: block;
         height: 500px;
+        float: left;
     }
 
 }
